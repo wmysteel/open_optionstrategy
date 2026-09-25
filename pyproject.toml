@@ -1,0 +1,29 @@
+[project]
+name = "open_optionstrategy"
+dynamic = ["version"]
+description = "基于 VeighNa 的开源期权策略应用：全市场期权策略的开发、回测与实盘"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "wmysteel" }]
+requires-python = ">=3.10"
+dependencies = ["vnpy>=4.4.0", "numpy>=2.2.3", "scipy>=1.11", "pyarrow>=15.0", "pandas>=2.2.3", "plotly>=6.0.0"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Natural Language :: Chinese (Simplified)",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[project.urls]
+Homepage = "https://github.com/wmysteel/open_optionstrategy"
+Issues = "https://github.com/wmysteel/open_optionstrategy/issues"
+
+[build-system]
+requires = ["hatchling>=1.27.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "open_optionstrategy/__init__.py"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

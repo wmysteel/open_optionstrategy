@@ -1,0 +1,16 @@
+# Python 字节码与缓存
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# 构建产物
+build/
+dist/
+*.egg-info/
+
+# 本地运行数据
+.vntrader/
+/docs/
+/tests/
+/tools/
